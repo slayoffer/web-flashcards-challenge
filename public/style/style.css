@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.flesh-card-decks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Rubik One", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: -4px -4px 0px #ffc107;
+  background: repeating-linear-gradient(
+    45deg,
+    #e1ee2a,
+    #0d0e0d 1px,
+    rgb(243, 223, 43) 2px,
+    rgb(12, 5, 5) 3px
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: table;
+  margin: 20px auto;
+}
+
+#decks-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.card-title {
+  margin: 8px 0;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.stats-picture {
+  border-radius: 0.375rem;
+}
+
+.list-group {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  background-color: #ffc107;
+  color: white;
+}
+
+#statList {
+  opacity: 0;
+  animation: ani 2.5s forwards;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  font-weight: bolder;
+  margin-top: 70px;
+  font-family: "Courier New", Courier, monospace;
+  /* text-shadow: rgb(57, 225, 71) 0 0 10px; */
+  font: bold 2em Arial, sans-serif;
+  color: #f0f0f0; /* Цвет текста, совпадает с цветом фона */
+  text-shadow: rgb(91, 206, 25) -1px -1px 0, rgb(27, 25, 25) 1px 1px 0;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.answer-button {
+  color: #fff;
+  background-color: #6f42c1;
+}
+
+.result {
+  padding: 5px;
+  color: #fff;
+  border-radius: 0.375rem;
+}
+
+.result-para {
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 0.375rem;
+}
+
+.heading {
+  font-size: 60px;
+  color: #ffc107;
+}
+
+.signup-link {
+  color: #6f42c1;
+}
+
+.signup-heading {
+  color: #ffc107;
+}
+
+.signin-btn {
+  margin-left: 20px;
+  color: #fff;
+  background-color: #6f42c1;
+}
+
+.stats-heading {
+  background-color: #ffc107;
+  padding: 15px;
+  border-radius: 0.375rem;
+}
+
+.card-button {
+  background-color: #6f42c1;
+  color: #fff;
+}
